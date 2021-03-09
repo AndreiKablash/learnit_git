@@ -1,10 +1,11 @@
 package by.ivramko;
 
 
+import org.w3c.dom.ls.LSOutput;
 
 class Vehicle{
 
-    private final String drive() { return "Driving vehicle"; }
+    private String drive() { return "Driving vehicle"; }
 }
 
 class Car extends Vehicle{
@@ -17,6 +18,11 @@ public class DemoOOP  extends  Car{
     public static void main(String[] args) {
         final Car car = new DemoOOP();
         System.out.println(car.drive());
+
+        System.out.println("added some functionality");
     }
+
+
+
 
 }
